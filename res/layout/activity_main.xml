@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#158684"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <!-- Can add paddingBottom, top, left, right to default before tools. -->
+    
+    <LinearLayout
+        android:id="@+id/linerLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+        
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/txt_status"
+            android:textColor="#000000"
+            android:textSize="@dimen/activity_horizontal_margin" />
+        
+        <TextView
+            android:id="@+id/txt_sip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/txt_sip"
+            android:textColor="#000000"
+            android:textSize="@dimen/activity_horizontal_margin" />
+        
+        <TextView
+            android:id="@+id/txt_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/txt_box"
+            android:textColor="#000000"
+            android:textSize="@dimen/activity_horizontal_margin" />
+        
+        <TextView
+            android:id="@+id/txt_carton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/txt_carton"
+            android:textColor="#000000"
+            android:textSize="@dimen/activity_horizontal_margin" />
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/img_cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/cursor"/>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        android:textColor="#000000" />
+
+</LinearLayout>
